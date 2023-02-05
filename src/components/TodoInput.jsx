@@ -5,7 +5,7 @@ const TodoInput = (props) => {
   const [todoInput, setTodoInput] = useState("");
 
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
+    if (e.key === "Enter" && e.target.value !== "") {
       var appendList = list.concat({ text: todoInput, completed: false });
       setTodoList(appendList);
       setTodoInput("");
@@ -18,6 +18,7 @@ const TodoInput = (props) => {
         type="text"
         className="todo__input"
         placeholder="Add your todo..."
+        data-testid="input_todo"
         value={todoInput}
         onChange={(e) => setTodoInput(e.target.value)}
         onKeyDown={(e) => handleKeyDown(e)}

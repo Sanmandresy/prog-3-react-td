@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList should render the todo list component 1`] = `
+<main
+  className="main__screen"
+>
+  <section>
+    <h1>
+      TO DO
+    </h1>
+    <input
+      className="todo__input"
+      data-testid="input_todo"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Add your todo..."
+      type="text"
+      value=""
+    />
+    <ul />
+  </section>
+  <section>
+    <h2>
+      DONE
+    </h2>
+    <ul />
+  </section>
+</main>
+`;
