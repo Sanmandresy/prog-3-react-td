@@ -6,9 +6,11 @@ const Dones = (props) => {
     <>
       <section>
         <h2>DONE</h2>
-        <ul>
+        <ul data-testid="done-list">
           {doneList?.map((done, index) => (
-            <li key={index}>{done.text}</li>
+            <li className="done" key={index}>
+              {done.text}
+            </li>
           ))}
         </ul>
       </section>

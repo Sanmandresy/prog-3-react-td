@@ -9,7 +9,7 @@ exports[`TodoList should render the todo list component 1`] = `
       TO DO
     </h1>
     <input
-      className="todo__input"
+      className="prompt"
       data-testid="input_todo"
       onChange={[Function]}
       onKeyDown={[Function]}
@@ -17,13 +17,17 @@ exports[`TodoList should render the todo list component 1`] = `
       type="text"
       value=""
     />
-    <ul />
+    <ul
+      data-testid="todo-list"
+    />
   </section>
   <section>
     <h2>
       DONE
     </h2>
-    <ul />
+    <ul
+      data-testid="done-list"
+    />
   </section>
 </main>
 `;

@@ -22,10 +22,11 @@ const Todos = ({ bridge, setTodos }) => {
       <section>
         <h1>TO DO</h1>
         <TodoInput setTodoList={setTodoList} list={todos} />
-        <ul>
+        <ul data-testid="todo-list">
           {todos?.map((todo, index) => (
             <li key={index}>
               <input
+                className="todo"
                 type={"checkbox"}
                 checked={todo.completed}
                 onClick={() => handleCheck(index)}

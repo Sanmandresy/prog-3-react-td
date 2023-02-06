@@ -1,7 +1,8 @@
-import { render, fireEvent } from "@testing-library/react";
+import { render, fireEvent, cleanup } from "@testing-library/react";
 
 import TodoInput from "../components/TodoInput";
 
+afterEach(cleanup);
 describe(TodoInput, () => {
   it("should have a blank value when rendered", () => {
     const { getByTestId } = render(<TodoInput />);

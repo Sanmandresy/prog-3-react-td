@@ -31,10 +31,36 @@ li {
   margin: 2vh 0;
 }
 
-.todo__input {
+.prompt {
   padding: 1vh 1vw;
   border-radius: 25px;
   outline: none;
   border: none;
   box-shadow: black 1px 1px;
+}
+
+.todo {
+  animation: zoom_in 750ms linear;
+}
+
+.done {
+  animation: slide_left 750ms linear;
+}
+
+@keyframes zoom_in {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slide_left {
+  0% {
+    transform: translateX(-6vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

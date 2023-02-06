@@ -16,7 +16,7 @@ const TodoInput = (props) => {
     <>
       <input
         type="text"
-        className="todo__input"
+        className="prompt"
         placeholder="Add your todo..."
         data-testid="input_todo"
         value={todoInput}
